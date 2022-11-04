@@ -8,7 +8,7 @@ function showPage(page) {
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("button.page").forEach((button) => {
     button.onclick = function () {
-      showPage(button.dataset.page);
+      showPage(this.dataset.page);
     };
   });
 });
